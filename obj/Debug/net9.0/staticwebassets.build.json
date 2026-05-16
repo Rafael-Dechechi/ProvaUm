@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "87GXFxMhlw4tH9+hHEM9uQOGn6ueHG8K05E5TA63OTc=",
+  "Source": "SorveteriaApi",
+  "BasePath": "_content/SorveteriaApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
