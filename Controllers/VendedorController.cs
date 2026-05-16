@@ -16,14 +16,14 @@ namespace SorveteriaApi.Controllers
             _context = context;
         }
 
-        // GET: api/vendedor
+       
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Vendedor>>> Get()
         {
             return await _context.Vendedores.ToListAsync();
         }
 
-        // POST: api/vendedor
+      
         [HttpPost]
         public async Task<ActionResult> Post(Vendedor vendedor)
         {
@@ -32,7 +32,7 @@ namespace SorveteriaApi.Controllers
             return Ok(vendedor);
         }
 
-        // PUT: api/vendedor/{codigo}
+        
         [HttpPut("{codigo}")]
         public async Task<ActionResult> Put(int codigo, Vendedor vendedor)
         {
@@ -42,7 +42,7 @@ namespace SorveteriaApi.Controllers
                 return NotFound();
             }
 
-            // Atualizando os campos específicos do vendedor
+            
             vendedorBanco.Nome = vendedor.Nome;
             vendedorBanco.Email = vendedor.Email;
             vendedorBanco.Telefone = vendedor.Telefone;
@@ -52,7 +52,7 @@ namespace SorveteriaApi.Controllers
             return Ok(vendedorBanco);
         }
 
-        // DELETE: api/vendedor/{codigo}
+ 
         [HttpDelete("{codigo}")]
         public async Task<ActionResult> Delete(int codigo)
         {
@@ -66,7 +66,7 @@ namespace SorveteriaApi.Controllers
             await _context.SaveChangesAsync();
             return Ok();
         }
-                // GET: api/vendedor/salario/{valor}
+                
         [HttpGet("salario/{valor}")]
         public async Task<ActionResult<IEnumerable<Vendedor>>> GetBySalario(decimal valor)
         {

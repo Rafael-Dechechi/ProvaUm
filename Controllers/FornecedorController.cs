@@ -16,14 +16,14 @@ namespace SorveteriaApi.Controllers
             _context = context;
         }
 
-        // GET: api/fornecedor
+       
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Fornecedor>>> Get()
         {
             return await _context.Fornecedores.ToListAsync();
         }
 
-        // POST: api/fornecedor
+        
         [HttpPost]
         public async Task<ActionResult> Post(Fornecedor fornecedor)
         {
@@ -32,7 +32,7 @@ namespace SorveteriaApi.Controllers
             return Ok(fornecedor);
         }
 
-        // PUT: api/fornecedor/{codigo}
+        
         [HttpPut("{codigo}")]
         public async Task<ActionResult> Put(int codigo, Fornecedor fornecedor)
         {
@@ -51,7 +51,7 @@ namespace SorveteriaApi.Controllers
             return Ok(fornecedorBanco);
         }
 
-        // DELETE: api/fornecedor/{codigo}
+        
         [HttpDelete("{codigo}")]
         public async Task<ActionResult> Delete(int codigo)
         {
@@ -65,11 +65,11 @@ namespace SorveteriaApi.Controllers
             await _context.SaveChangesAsync();
             return Ok();
         }
-        // GET: api/fornecedor/nome/{nome}
+        
         [HttpGet("nome/{nome}")]
         public async Task<ActionResult<IEnumerable<Fornecedor>>> GetByNome(string nome)
         {
-            // O Where filtra a lista e o Contains procura o texto dentro do nome
+            
             return await _context.Fornecedores
                 .Where(f => f.Nome.Contains(nome))
                 .ToListAsync();

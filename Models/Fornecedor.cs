@@ -5,7 +5,7 @@ namespace SorveteriaApi.Models
     public class Fornecedor
     {
         [Key]
-        // O Entity Framework reconhecerá esta propriedade como a chave primária
+    
         public int Codigo { get; set; }
         public string Nome { get; set; }
         public string Cnpj { get; set; }

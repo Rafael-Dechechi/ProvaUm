@@ -10,7 +10,6 @@ namespace SorveteriaApi.Data
         {
         }
 
-        // Tabelas do banco de dados da sorveteria
         public DbSet<Fornecedor> Fornecedores { get; set; }
         public DbSet<Vendedor> Vendedores { get; set; }
     }
