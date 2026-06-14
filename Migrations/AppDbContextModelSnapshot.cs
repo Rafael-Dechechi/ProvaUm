@@ -16,6 +16,29 @@ namespace SorveteriaApi.Migrations
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "9.0.0");
 
+            modelBuilder.Entity("SorveteriaApi.Models.Cliente", b =>
+                {
+                    b.Property<int>("Codigo")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Nome")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Telefone")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("Codigo");
+
+                    b.ToTable("Clientes");
+                });
+
             modelBuilder.Entity("SorveteriaApi.Models.Fornecedor", b =>
                 {
                     b.Property<int>("Codigo")

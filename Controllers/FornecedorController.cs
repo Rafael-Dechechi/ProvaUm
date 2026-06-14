@@ -16,14 +16,24 @@ namespace SorveteriaApi.Controllers
             _context = context;
         }
 
-       
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Fornecedor>>> Get()
         {
             return await _context.Fornecedores.ToListAsync();
         }
 
-        
+        // NOVO ENDPOINT: Busca por Código (Atividade Prática Assistida)
+        [HttpGet("{codigo}")]
+        public async Task<ActionResult<Fornecedor>> GetById(int codigo)
+        {
+            var fornecedor = await _context.Fornecedores.FindAsync(codigo);
+            if (fornecedor == null)
+            {
+                return NotFound();
+            }
+            return Ok(fornecedor);
+        }
+
         [HttpPost]
         public async Task<ActionResult> Post(Fornecedor fornecedor)
         {
@@ -32,7 +42,6 @@ namespace SorveteriaApi.Controllers
             return Ok(fornecedor);
         }
 
-        
         [HttpPut("{codigo}")]
         public async Task<ActionResult> Put(int codigo, Fornecedor fornecedor)
         {
@@ -51,7 +60,6 @@ namespace SorveteriaApi.Controllers
             return Ok(fornecedorBanco);
         }
 
-        
         [HttpDelete("{codigo}")]
         public async Task<ActionResult> Delete(int codigo)
         {
@@ -69,7 +77,6 @@ namespace SorveteriaApi.Controllers
         [HttpGet("nome/{nome}")]
         public async Task<ActionResult<IEnumerable<Fornecedor>>> GetByNome(string nome)
         {
-            
             return await _context.Fornecedores
                 .Where(f => f.Nome.Contains(nome))
                 .ToListAsync();

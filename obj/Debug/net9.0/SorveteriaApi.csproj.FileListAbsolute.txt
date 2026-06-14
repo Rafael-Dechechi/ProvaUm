@@ -146,3 +146,16 @@ C:\Users\Rafael Dechechi\SorveteriaApi\obj\Debug\net9.0\refint\SorveteriaApi.dll
 C:\Users\Rafael Dechechi\SorveteriaApi\obj\Debug\net9.0\SorveteriaApi.pdb
 C:\Users\Rafael Dechechi\SorveteriaApi\obj\Debug\net9.0\SorveteriaApi.genruntimeconfig.cache
 C:\Users\Rafael Dechechi\SorveteriaApi\obj\Debug\net9.0\ref\SorveteriaApi.dll
+C:\Users\Rafael Dechechi\SorveteriaApi\obj\Debug\net9.0\SorveteriaApi.sourcelink.json
+C:\Users\Rafael Dechechi\SorveteriaApi\bin\Debug\net9.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Rafael Dechechi\SorveteriaApi\bin\Debug\net9.0\Microsoft.Bcl.Cryptography.dll
+C:\Users\Rafael Dechechi\SorveteriaApi\bin\Debug\net9.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\Rafael Dechechi\SorveteriaApi\bin\Debug\net9.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Rafael Dechechi\SorveteriaApi\bin\Debug\net9.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\Rafael Dechechi\SorveteriaApi\bin\Debug\net9.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Rafael Dechechi\SorveteriaApi\bin\Debug\net9.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Rafael Dechechi\SorveteriaApi\bin\Debug\net9.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Rafael Dechechi\SorveteriaApi\bin\Debug\net9.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Rafael Dechechi\SorveteriaApi\bin\Debug\net9.0\sorveteria-front\package-lock.json
+C:\Users\Rafael Dechechi\SorveteriaApi\bin\Debug\net9.0\sorveteria-front\package.json
+C:\Users\Rafael Dechechi\SorveteriaApi\bin\Debug\net9.0\sorveteria-front\public\manifest.json
