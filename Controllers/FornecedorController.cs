@@ -22,7 +22,7 @@ namespace SorveteriaApi.Controllers
             return await _context.Fornecedores.ToListAsync();
         }
 
-        // NOVO ENDPOINT: Busca por Código (Atividade Prática Assistida)
+        
         [HttpGet("{codigo}")]
         public async Task<ActionResult<Fornecedor>> GetById(int codigo)
         {

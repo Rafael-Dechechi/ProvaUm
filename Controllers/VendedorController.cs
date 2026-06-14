@@ -70,7 +70,7 @@ namespace SorveteriaApi.Controllers
         [HttpGet("salario/{valor}")]
         public async Task<ActionResult<IEnumerable<Vendedor>>> GetBySalario(decimal valor)
         {
-            // O Where filtra a lista trazendo apenas salários maiores que o valor informado
+          
             return await _context.Vendedores
                 .Where(v => v.Salario > valor)
                 .ToListAsync();

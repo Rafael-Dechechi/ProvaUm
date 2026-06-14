@@ -8,7 +8,7 @@ namespace SorveteriaApi.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    [Authorize] // Exige o Token JWT para todos os endpoints deste controlador
+    [Authorize] 
     public class ClienteController : ControllerBase
     {
         private readonly AppDbContext _context;

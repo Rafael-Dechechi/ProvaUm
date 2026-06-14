@@ -12,6 +12,6 @@ namespace SorveteriaApi.Data
 
         public DbSet<Fornecedor> Fornecedores { get; set; }
         public DbSet<Vendedor> Vendedores { get; set; }
-        public DbSet<Cliente> Clientes { get; set; } // Nova tabela adicionada
+        public DbSet<Cliente> Clientes { get; set; }
     }
 }

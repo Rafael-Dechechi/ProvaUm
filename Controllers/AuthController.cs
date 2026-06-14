@@ -16,7 +16,7 @@ namespace SorveteriaApi.Controllers
         [HttpPost("login")]
         public IActionResult Login(Login login)
         {
-            // Validação simples simulada
+           
             if (login.Usuario == "admin" && login.Senha == "123")
             {
                 var tokenHandler = new JwtSecurityTokenHandler();
